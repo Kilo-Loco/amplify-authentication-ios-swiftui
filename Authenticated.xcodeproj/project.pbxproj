@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2BA5AA18777EC514EC15A6 /* Pods_Authenticated.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EC6E400BA52BCA026B14E3 /* Pods_Authenticated.framework */; };
 		9EC6B46124C7809600134548 /* AuthenticatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6B46024C7809600134548 /* AuthenticatedApp.swift */; };
 		9EC6B46524C7809800134548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6B46424C7809800134548 /* Assets.xcassets */; };
 		9EC6B46824C7809800134548 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6B46724C7809800134548 /* Preview Assets.xcassets */; };
@@ -15,9 +16,15 @@
 		9EC6B47424C7828700134548 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6B47324C7828700134548 /* SignUpView.swift */; };
 		9EC6B47824C782DF00134548 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6B47724C782DF00134548 /* ConfirmationView.swift */; };
 		9EC6B47A24C7834000134548 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6B47924C7834000134548 /* SessionView.swift */; };
+		9EC6B47D24C78CCF00134548 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6B47B24C78CCF00134548 /* awsconfiguration.json */; };
+		9EC6B47E24C78CCF00134548 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6B47C24C78CCF00134548 /* amplifyconfiguration.json */; };
+		9EC6B48024C78E1400134548 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6B47F24C78E1400134548 /* SessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00EC6E400BA52BCA026B14E3 /* Pods_Authenticated.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authenticated.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F599FCA406613E759E52C25 /* Pods-Authenticated.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authenticated.debug.xcconfig"; path = "Target Support Files/Pods-Authenticated/Pods-Authenticated.debug.xcconfig"; sourceTree = "<group>"; };
+		6056F7FD5786F7B6E0FCF984 /* Pods-Authenticated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authenticated.release.xcconfig"; path = "Target Support Files/Pods-Authenticated/Pods-Authenticated.release.xcconfig"; sourceTree = "<group>"; };
 		9EC6B45D24C7809600134548 /* Authenticated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authenticated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC6B46024C7809600134548 /* AuthenticatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedApp.swift; sourceTree = "<group>"; };
 		9EC6B46424C7809800134548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +35,9 @@
 		9EC6B47324C7828700134548 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		9EC6B47724C782DF00134548 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		9EC6B47924C7834000134548 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		9EC6B47B24C78CCF00134548 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		9EC6B47C24C78CCF00134548 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		9EC6B47F24C78E1400134548 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2BA5AA18777EC514EC15A6 /* Pods_Authenticated.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E57AADDC8876859D6597FDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00EC6E400BA52BCA026B14E3 /* Pods_Authenticated.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A4F31F6B42FA3F462435B2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F599FCA406613E759E52C25 /* Pods-Authenticated.debug.xcconfig */,
+				6056F7FD5786F7B6E0FCF984 /* Pods-Authenticated.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9EC6B45424C7809600134548 = {
 			isa = PBXGroup;
 			children = (
 				9EC6B45F24C7809600134548 /* Authenticated */,
 				9EC6B45E24C7809600134548 /* Products */,
+				8A4F31F6B42FA3F462435B2C /* Pods */,
+				2E57AADDC8876859D6597FDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,11 +93,14 @@
 				9EC6B46424C7809800134548 /* Assets.xcassets */,
 				9EC6B46924C7809800134548 /* Info.plist */,
 				9EC6B46624C7809800134548 /* Preview Content */,
+				9EC6B47C24C78CCF00134548 /* amplifyconfiguration.json */,
+				9EC6B47B24C78CCF00134548 /* awsconfiguration.json */,
 				9EC6B46F24C7816900134548 /* PrettyModifierExtensions.swift */,
 				9EC6B46024C7809600134548 /* AuthenticatedApp.swift */,
-				9EC6B47124C781A800134548 /* LoginView.swift */,
+				9EC6B47F24C78E1400134548 /* SessionManager.swift */,
 				9EC6B47324C7828700134548 /* SignUpView.swift */,
 				9EC6B47724C782DF00134548 /* ConfirmationView.swift */,
+				9EC6B47124C781A800134548 /* LoginView.swift */,
 				9EC6B47924C7834000134548 /* SessionView.swift */,
 			);
 			path = Authenticated;
@@ -88,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC6B46C24C7809800134548 /* Build configuration list for PBXNativeTarget "Authenticated" */;
 			buildPhases = (
+				F8CA65CA3EEB4102000DCBC6 /* [CP] Check Pods Manifest.lock */,
 				9EC6B45924C7809600134548 /* Sources */,
 				9EC6B45A24C7809600134548 /* Frameworks */,
 				9EC6B45B24C7809600134548 /* Resources */,
+				6E246EF3054589723AC241CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,10 +175,54 @@
 			files = (
 				9EC6B46824C7809800134548 /* Preview Assets.xcassets in Resources */,
 				9EC6B46524C7809800134548 /* Assets.xcassets in Resources */,
+				9EC6B47D24C78CCF00134548 /* awsconfiguration.json in Resources */,
+				9EC6B47E24C78CCF00134548 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E246EF3054589723AC241CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Authenticated/Pods-Authenticated-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Authenticated/Pods-Authenticated-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Authenticated/Pods-Authenticated-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CA65CA3EEB4102000DCBC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Authenticated-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EC6B45924C7809600134548 /* Sources */ = {
@@ -156,6 +235,7 @@
 				9EC6B46124C7809600134548 /* AuthenticatedApp.swift in Sources */,
 				9EC6B47224C781A800134548 /* LoginView.swift in Sources */,
 				9EC6B47024C7816900134548 /* PrettyModifierExtensions.swift in Sources */,
+				9EC6B48024C78E1400134548 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +360,7 @@
 		};
 		9EC6B46D24C7809800134548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F599FCA406613E759E52C25 /* Pods-Authenticated.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +383,7 @@
 		};
 		9EC6B46E24C7809800134548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6056F7FD5786F7B6E0FCF984 /* Pods-Authenticated.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
